@@ -6,9 +6,10 @@ namespace sda_csharp_exercises
     {
         static void Aritmetic(int length, int firstElement, int difference)
         {
-            for (int i = 0; i < length; i++)
+            Console.Write(firstElement + ", ");
+            for (int i = 1; i < length; i++)
             {
-                Console.Write((firstElement * i) + difference + ", ");
+                Console.Write(firstElement * i + difference  + ", ");
             } 
         }
 
