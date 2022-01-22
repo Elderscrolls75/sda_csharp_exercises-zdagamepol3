@@ -21,7 +21,11 @@ namespace sda_csharp_exercises
                 sumOfMultiplying += PESELNumbers[i] * weights[i];
             }
             int moduloOfSum = sumOfMultiplying % 10;
-            if (moduloOfSum == PESELNumbers[10])
+            if (10 - moduloOfSum == PESELNumbers[10])
+            {
+                Console.WriteLine("Liczba kontrolna poprawna!");
+            }
+            else if (moduloOfSum == 0 && PESELNumbers[10] == 0)
             {
                 Console.WriteLine("Liczba kontrolna poprawna!");
             }
