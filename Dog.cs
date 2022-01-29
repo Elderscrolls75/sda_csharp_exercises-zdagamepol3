@@ -9,6 +9,7 @@ namespace sda_csharp_exercises
     class Dog : IAnimal
     {
         protected string name;
+        protected readonly string dogSound = "hau hau!";
 
         public Dog(string name)
         {
@@ -17,7 +18,7 @@ namespace sda_csharp_exercises
 
         public string MakeSound()
         {
-            return string.Format("{0} wydaje dźwięk: hau hau!", name);
+            return string.Format("{0} wydaje dźwięk: {1}", name, dogSound);
         }
 
         public string WhatAnimal()
