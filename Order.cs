@@ -8,9 +8,6 @@ namespace sda_csharp_exercises
 {
     abstract class Order
     {
-        public virtual double GetValue()
-        {
-            return 0;
-        }
+        public abstract double GetValue();
     }
 }
