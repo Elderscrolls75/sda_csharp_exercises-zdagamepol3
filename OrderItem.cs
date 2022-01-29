@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace sda_csharp_exercises
 {
-    class OrderItem : Order
+    class OrderItem
     {
         protected string productName;
         protected int productQuantity;
-        protected double unitPrice;
+        protected decimal unitPrice;
 
-        public OrderItem(string productName, int productQuantity, double unitPrice)
+        public OrderItem(string productName, int productQuantity, decimal unitPrice)
         {
             this.productName = productName;
             this.productQuantity = productQuantity;
             this.unitPrice = unitPrice;
         }
 
-        public override double GetValue()
+        public virtual decimal GetValue()
         {
-            double orderValue;
+            decimal orderValue;
             orderValue = productQuantity * unitPrice;
             return orderValue;
         }

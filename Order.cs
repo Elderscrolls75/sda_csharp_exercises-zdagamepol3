@@ -6,8 +6,24 @@ using System.Threading.Tasks;
 
 namespace sda_csharp_exercises
 {
-    abstract class Order
+    class Order
     {
-        public abstract double GetValue();
+        OrderItem[] orderItems;
+
+        public Order(OrderItem[] orderItems)
+        {
+            this.orderItems = orderItems;
+        }
+
+        public void PrintSummary()
+        {
+            decimal total = 0;
+            foreach (OrderItem i in orderItems)
+            {
+                total += i.GetValue();
+            }
+
+            Console.WriteLine("Wartość zamówienia: " + total + "zł");
+        }
     }
 }

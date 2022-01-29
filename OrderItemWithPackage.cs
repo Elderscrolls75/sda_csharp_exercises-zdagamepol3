@@ -9,17 +9,17 @@ namespace sda_csharp_exercises
     class OrderItemWithPackage : OrderItem
     {
         protected string packageName;
-        protected double packagePrice;
-        public OrderItemWithPackage(string productName, int productQuantity, double unitPrice, string packageName, double packagePrice)
+        protected decimal packagePrice;
+        public OrderItemWithPackage(string productName, int productQuantity, decimal unitPrice, string packageName, decimal packagePrice)
             : base(productName, productQuantity, unitPrice)
         {
             this.packageName = packageName;
             this.packagePrice = packagePrice;
         }
 
-        public override double GetValue()
+        public override decimal GetValue()
         {
-            double orderValue;
+            decimal orderValue;
             orderValue = productQuantity * unitPrice + packagePrice * productQuantity;
             return orderValue;
         }
