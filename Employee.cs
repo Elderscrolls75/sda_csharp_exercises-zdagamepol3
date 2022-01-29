@@ -10,16 +10,16 @@ namespace sda_csharp_exercises
     {
         protected string name;
         protected string surname;
-        protected double salary;
+        protected decimal salary;
 
-        public Employee(string name, string surname, double salary)
+        public Employee(string name, string surname, decimal salary)
         {
             this.name = name;
             this.surname = surname;
             this.salary = salary;
         }
 
-        public double Salary
+        public decimal Salary
         {
             get { return salary; }
         }

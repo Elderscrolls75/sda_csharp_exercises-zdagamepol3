@@ -8,9 +8,9 @@ namespace sda_csharp_exercises
 {
     class Manager : Employee
     {
-        public Manager(string name, string surname, double salary) : base(name, surname, salary)
+        public Manager(string name, string surname, decimal salary) : base(name, surname, salary)
         {
-            this.salary = salary * 1.1;
+            this.salary = salary * 1.10m;
         }
     }
 }
