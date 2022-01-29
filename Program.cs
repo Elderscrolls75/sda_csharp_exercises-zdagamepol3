@@ -18,6 +18,15 @@ namespace sda_csharp_exercises
             {
                 Console.WriteLine("Ten zwierzak to: " + i.WhatAnimal());
                 Console.WriteLine(i.MakeSound());
+                
+                if (i is Dog)
+                {
+                    Console.WriteLine("Typ: Dog");
+                }
+                else
+                {
+                    Console.WriteLine("Typ: Cat");
+                }
             }
         }
     }
