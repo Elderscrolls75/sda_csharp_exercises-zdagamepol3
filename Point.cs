@@ -8,8 +8,8 @@ namespace sda_csharp_exercises
 {
     class Point
     {
-        protected int X { get; set; }
-        protected int Y { get; set; }
+        public int X { get; protected set; }
+        public int Y { get; protected set; }
 
         public Point(int x, int y)
         {
