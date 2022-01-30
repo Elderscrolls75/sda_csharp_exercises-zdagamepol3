@@ -23,6 +23,8 @@ namespace sda_csharp_exercises
                 r.Show();
             }
 
+            Console.WriteLine("Tablica prostokątów: ");
+            Rectangle.PrintBiggestRectangle(tablicaProstokątów);
 
         }
     }

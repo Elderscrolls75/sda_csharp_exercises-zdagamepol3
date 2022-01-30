@@ -41,5 +41,18 @@ namespace sda_csharp_exercises
         {
             Console.WriteLine(typeof(Rectangle).Name);
         }
+
+        public static void PrintBiggestRectangle(Rectangle[] tablicaProstokątów)
+        {
+            List<decimal> polaPowierzchni = new List<decimal>();
+            for (int i = 0; i < tablicaProstokątów.Length - 1; i++)
+            {
+                polaPowierzchni.Add(tablicaProstokątów[i].Area());
+            }
+            polaPowierzchni.Sort();
+            polaPowierzchni.Reverse();
+
+            Console.WriteLine(polaPowierzchni[0]);
+        }
     }
 }
