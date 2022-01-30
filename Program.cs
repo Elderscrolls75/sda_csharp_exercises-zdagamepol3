@@ -6,6 +6,10 @@ namespace sda_csharp_exercises
     {
         static void Main(string[] args)
         {
+            Rectangle prostokąt = new Rectangle(5, 7);
+
+            prostokąt.Show();
+            Rectangle.PrintClassName();
         }
     }
 }
